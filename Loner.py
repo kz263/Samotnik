@@ -32,12 +32,6 @@ class PlaySpace:
             plt.plot(self.xCoord, self.yCoord, 's', color = "red", markersize = 15)
             plt.ylim(-3.3,3.3)
             plt.xlim(-3.3,3.3)
-    # class Pawn:
-    #     """Class for deciding if a space has a Pawn"""
-    #     def __init__(self, active):
-    #         ## Define if the space has a pawn
-    #         self.active = active
-    #         return
 
 def CreateGrid():
     ## Define x and y as numpy arrays
@@ -48,7 +42,6 @@ def CreateGrid():
             coords[0, (7 * i) + j] = i - 3
             coords[1, (7 * i) + j] = j - 3
 
-    # print("Coords", coords)
     return coords
 
 coords = CreateGrid()
